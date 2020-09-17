@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./public/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+   <title>Git Beginner</title>
+</head>
+<body>
+   <header>
+
+   </header>
+
+   <div id="init">
+      <a href="https://git-scm.com/" target="_blank"><img id="logoGit" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Logo Git"></a>
+
+      <p align="center">
+         Git is a <a href="https://git-scm.com/about/free-and-open-source" target="_blank">free and open source</a> distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</br>
+         Git is <a href="https://git-scm.com/doc" target="_blank">easy to learn</a> and has a <a href="https://git-scm.com/about/small-and-fast" target="_blank">tiny footprint with lightning fast performance.</a> It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like <a href="https://git-scm.com/about/branching-and-merging" target="_blank">cheap local branching</a>, convenient <a href="https://git-scm.com/about/staging-area" target="_blank">staging areas</a>, and <a href="https://git-scm.com/about/distributed" target="_blank">multiple workflows</a>. <br>
+         <b>By:</b> <a href="https://git-scm.com/" target="_blank">Git</a>
+      </p>
+   </div>
+
+   <div id="install">
+      <h2>
+         <img src="https://user-images.githubusercontent.com/46982925/77262174-fe7e8f00-6c72-11ea-884a-ceaae3c71cd2.png" alt="Icon Git" width="20px" height="20px"> 
+         Install/Update
+      </h2>
+
+      <ul>
+         <li>
+            <img src="https://user-images.githubusercontent.com/46982925/77264132-82874580-6c78-11ea-895d-b41cdb40f546.png" alt="Logo Windows">
+            <b>Windows</b></br>         
+         </li>
+      </ul>
+
+      <p class="blockquote"><a href="https://git-scm.com/download/win" target="_blank">Download</a> latest source release</p>
+
+      <ul>
+         <li>
+            <img src="https://user-images.githubusercontent.com/46982925/77265047-7308fc00-6c7a-11ea-8681-8cd213f23174.png" alt="Logo MacOS">
+            <b>Mac OS</b>         
+         </li>
+      </ul>
+      
+      <p class="blockquote"><a href="https://git-scm.com/download/mac" target="_blank">Download</a> latest source release</p>
+
+      <ul>
+         <li>
+            <img src="https://user-images.githubusercontent.com/46982925/77265474-8ec0d200-6c7b-11ea-89fa-e352c02704e5.png" alt="Logo Ubuntu">
+            <b>Ubuntu</b>
+            <img src="https://user-images.githubusercontent.com/46982925/77266259-badd5280-6c7d-11ea-8249-c66a14e29d30.png" alt="Logo Ubuntu">
+            <b>Debian</b>                 
+         </li>
+      </ul>
+
+      <pre>
+         $ sudo add-apt-repository ppa:git-core/ppa -y
+         $ sudo apt-get update
+         $ sudo apt-get install git -y
+      </pre>   
+
+      <ul>
+         <li>
+            <img src="https://user-images.githubusercontent.com/46982925/77268352-5ffb2980-6c84-11ea-8318-de0e5d624d40.png" alt="Logo MacOS">
+            <b>Other</b>
+            <p class="blockquote">Access the list <a href="https://git-scm.com/download/linux" target="_blank">here</a></p>
+         </li>
+      </ul>
+   </div>
+
+   <h2>Commands (<a href="https://git-scm.com/docs/git#_git_commands" target="_blank">All</a>)</h2>
+   
+   <div class="setup">
+      <h3> <img src="https://git-scm.com/images/icons/setup-sm.png" alt="Setup-Icon"> Setup and Config</h3>
+
+      <ul>
+         <li>
+            <b><a href="https://git-scm.com/docs/git-config" target="_blank">config</a> - Get and set repository or global options</b>
+         </li>
+      </ul>
+
+      <p class="titleIt">Open the terminal and type the commands:</p>
+      
+      <p class="titleIt">Username:</p>   
+      <pre>$ git config --global user.name "your_name"</pre>
+      
+      <p class="titleIt">E-mail:</p>   
+      <pre>$ git config --global user.email "your_email"</pre>   
+      
+      <p class="titleIt">Editor:</p>   
+      <pre>$ git config --global user.editor "your_fav_editor"</pre>
+      
+      <p class="titleIt">Git config editor:</p>
+
+      <table class="table">
+         <thead>
+            <tr>
+               <th>Editor</th>
+               <th>Config Command</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+            <td class="tbCodes">VS Code</td>
+            <td class="tbCommand"> 
+               <code>$ git config --global core.editor "code --wait"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">Atom</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "atom --wait"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">emacs</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "emacs"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">nano</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "nano -w"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">vim</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "vim"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">Textmate</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "mate -w"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">Sublime Text (Mac)</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "subl -n -w"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">Sublime Text (Win x86)</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublimetext.exe' -w"</code>
+               </td>
+            </tr>
+            <tr>
+            <td class="tbCodes">Sublime Text (Win x64)</td>
+            <td class="tbCommand">
+               <code>$ git config --global core.editor "'c:/program files/sublime text 3/sublimetext.exe' -w"</code>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+
+      <p class="titleIt">Display settings:</p>
+      <pre>$ git config <span><</span>key<span>></span></pre>
+      
+      <p class="titleIt">Example:</p>
+      <pre>
+         $ git config config user.name   
+         $ git config config user.email
+         $ git config config --list
+      </pre>
+   </div>
+
+   <div class="getProject">
+      <h3><img src="https://git-scm.com/images/icons/projects-sm.png" alt="Get-Icon"> Getting and Creating Projects</h3>
+      
+      <ul>
+         <li>
+            <b><a href="https://git-scm.com/docs/git-init" target="_blank">init</a> - Create an empty Git repository or reinitialize an existing one</b>
+         </li>
+      </ul>
+
+      <pre>$ git init</pre>
+
+      <ul>
+         <li>
+            <b><a href="https://git-scm.com/docs/git-clone" target="_blank">clone</a> - Clone a repository into a new directory</b>
+         </li>
+      </ul>
+
+      <pre>$ git clone <span><</span>repository<span>></span></pre>
+   </div>
+
+
+   <footer>
+      Feito com ❤️ por <a href="https://www.instagram.com/jonhoffmam/" target="_blank">Jon Hoffmam</a>
+   </footer>
+</body>
+</html>

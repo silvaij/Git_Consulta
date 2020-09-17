@@ -1,0 +1,118 @@
+* {
+   box-sizing: border-box;
+   /* margin: 0;
+   border: 0;
+   padding: 0; */
+}
+
+body {
+   font-family: 'Ubuntu', sans-serif;
+   color: #24292E;
+   line-height: 1.25;
+   padding: 16px;
+   margin: 20px 100px;   
+}
+
+#init {
+   text-align: center;
+}
+
+#logoGit {
+   width: 200px;
+   height: 80px;   
+}
+
+h2 {
+   padding-bottom: 5px;
+   border-bottom: 1px solid #eaecef;   
+}
+
+a {
+   color: #0366d6;
+   text-decoration-line : none;  
+}
+
+.blockquote {
+   padding: 0 1em;
+   color: #6a737d;
+   border-left: .25em solid #dfe2e5;      
+}
+
+.commands {
+   padding: 16px;
+   overflow: auto;
+   font-size: 85%;
+   line-height: 1.45;
+   background-color: #f6f8fa; 
+   border-radius: 3px;
+   margin: 1em 0;
+}
+
+pre {   
+   font-family: "Ubuntu", sans-serif;   
+   padding: 16px;
+   overflow: auto;
+   font-size: 85%;
+   line-height: 1.45;
+   background-color: #f6f8fa; 
+   border-radius: 3px;
+   margin: 1em 0;
+   white-space: pre-line;
+}
+
+.titleIt {
+   font-style: italic ;
+}
+
+.table  {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+tr:nth-child(2n) {
+   background-color: #f6f8fa;
+}
+
+.table th {   
+   font-size: 16px;
+   font-weight: 600;
+   padding: 6px 13px;    
+   border: 1px solid #dfe2e5;
+   line-height: 1.5;
+   text-align: center;
+   vertical-align: top;
+}
+
+.table td { 
+   font-size: 16px;   
+   padding: 6px 13px;    
+   border: 1px solid #dfe2e5;
+   line-height: 1.5;
+   display: table-cell;
+}
+
+.table .tbCodes {
+   border: 1px solid #dfe2e5;
+   text-align: center;
+   vertical-align: top
+}
+
+.table .tbCommand {   
+   border: 1px solid #dfe2e5;
+   text-align:left;
+   vertical-align:top
+}
+
+code {
+   padding: 0.2em 0.4em;
+   margin: 0;
+   font-size: 85%;
+   border-radius: 3px;
+   background-color: rgba(27,31,35,.05);
+}
+
+footer {
+   text-align: center;
+   border-top: 1px solid #eaecef;
+   padding-top: 15px;
+}
